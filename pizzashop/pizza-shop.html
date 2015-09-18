@@ -10,52 +10,57 @@
   </head>
   <body>
     <div class="container">
-<h1>Pizza Shop</h1>
-<form id="pizza-order">
-<h2>Choose Quantity & Size</h1>
-  <p> Quantity:
-  <select class="quantity" name="quantity">
-    <option selected value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-  </select>
-  </p>
-  <p> Size:
-    <select class="size" name="size">
-    <option selected value="6.99">Small</option>
-    <option value="8.99">Medium</option>
-    <option value="10.99">Large</option>
-  </select>
-  </p>
-  <h2>Choose Toppings</h2>
-  <div class="toppings">
-    <input type="checkbox" name="Pepperoni" value="Pepperoni"> Pepperoni
-    <input type="checkbox" name="Italian Sausage" value="Italian Sausage"> Italian Sausage
-    <input type="checkbox" name="Bacon" value="Bacon"> Bacon
-    <input type="checkbox" name="Chicken" value="Chicken"> Chicken
-    <br>
-    <input type="checkbox" name="Feta Cheese" value="Feta Cheese"> Feta Cheese
-    <input type="checkbox" name="Banana Peppers" value="Banana Peppers"> Banana Peppers
-    <input type="checkbox" name="Black Olives" value="Black Olives"> Black Olives
-    <input type="checkbox" name="Jalapeno Peppers" value="Jalapeno Peppers"> Jalapeno Peppers
-    <input type="checkbox" name="Mushrooms" value="Mushrooms"> Mushrooms
-    <input type="checkbox" name="Onions" value="Onions"> Onions
-  </div>
-    <button type="submit" class="btn" value="submit">Create</button>
-</form>
-</div>
+    <h1>Pizza Shop</h1>
+    <img src="css/pizza.jpeg" alt="Pizza on a table">
+    <form id="pizza-order">
+      <div id="order">
+        <div id="quantity-size">
+          <h2>Choose Quantity & Size</h1>
+            <p> Quantity:
+              <select class="quantity" name="quantity">
+                <option selected value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </p>
+            <p> Size:
+              <select class="size" name="size">
+                <option selected value="6.99">Small</option>
+                <option value="8.99">Medium</option>
+                <option value="10.99">Large</option>
+              </select>
+            </p>
+        </div>
+        <div id="choose-toppings">
+          <h2>Choose Toppings</h2>
+            <div class="toppings">
+              <input type="checkbox" name="Pepperoni" value="Pepperoni"> Pepperoni
+              <input type="checkbox" name="Italian Sausage" value="Italian Sausage"> Italian Sausage
+              <input type="checkbox" name="Bacon" value="Bacon"> Bacon
+              <input type="checkbox" name="Chicken" value="Chicken"> Chicken
+              <br>
+              <input type="checkbox" name="Feta Cheese" value="Feta Cheese"> Feta Cheese
+              <input type="checkbox" name="Banana Peppers" value="Banana Peppers"> Banana Peppers
+              <input type="checkbox" name="Black Olives" value="Black Olives"> Black Olives
+              <input type="checkbox" name="Jalapeno Peppers" value="Jalapeno Peppers"> Jalapeno Peppers
+              <input type="checkbox" name="Mushrooms" value="Mushrooms"> Mushrooms
+              <input type="checkbox" name="Onions" value="Onions"> Onions
+            </div>
+        </div>
+    </div>
+      <button id="button-id" type="submit" class="btn btn-info" value="submit">Create</button>
+  </form>
 
-<h2 id="show-header">Total Cost:</h2>
-<div id="result">
-<h2><span id="cost"></span></h2>
-</div>
+  <h2 id="show-header">Total Cost:</h2>
+  <div id="result">
+  <h2><span id="cost"></span></h2>
+  </div>
 <br>
 <br>
 
 <span class="btn btn-primary" id="show-order-btn">Order</span>
-</div>
   </body>
 </html>

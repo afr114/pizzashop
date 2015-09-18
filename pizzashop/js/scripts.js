@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 
   var inputQuantity = parseInt($(".quantity").val());
-  var inputPizzaSize = parseInt($(".size").val());
+  var inputPizzaSize = parseFloat($(".size").val());
   var newPizza = new pizza(inputQuantity, inputPizzaSize);
 
   $('.toppings :checked').each(function() {

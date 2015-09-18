@@ -1,7 +1,42 @@
 #show-order-btn {
   display: none;
+  margin-left:20%;
 }
 
 #show-header {
   display: none;
+  margin-left:20%;
+}
+
+#cost{
+  margin-left:20%;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:5%;
+}
+
+#quantity-size{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2%;
+}
+
+#choose-toppings{
+  float:right;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:-10%;
+}
+
+#button-id{
+margin-top: 1%;
+width:10%
 }
