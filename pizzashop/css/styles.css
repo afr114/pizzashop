@@ -1,16 +1,7 @@
-#show-contact {
+#show-order-btn {
   display: none;
 }
 
 #show-header {
   display: none;
-}
-
-.contact {
-  cursor: pointer;
-  color: #0088cc;
-}
-
-.contact:hover {
-  text-decoration: underline;
 }

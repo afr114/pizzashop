@@ -11,3 +11,26 @@ pizza.prototype.calculateCost = function() {
 function topping(toppingName) {
   this.toppingName = toppingName;
 }
+
+$(document).ready(function(){
+  $("form#pizza-order").submit(function(event) {
+  event.preventDefault();
+  $("#show-header").fadeIn("fast");
+
+
+  var inputQuantity = parseInt($(".quantity").val());
+  var inputPizzaSize = parseInt($(".size").val());
+  var newPizza = new pizza(inputQuantity, inputPizzaSize);
+
+  $('.toppings :checked').each(function() {
+    var newToppings = ($(this).val());
+    newPizza.toppings.push(newToppings);
+  });
+
+
+  $("#show-header").show();
+  $("#show-order-btn").show();
+  $("#result").show();
+  $("#cost").text(newPizza.calculateCost(newPizza));
+  });
+});
